@@ -1,0 +1,513 @@
+fileFormatVersion: 2
+guid: 6b404e685c77df64e987e281ec1e7ad3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4447813132229823349
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_0
+  - first:
+      213: 3839732646502739657
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_1
+  - first:
+      213: 6125505258414885182
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_2
+  - first:
+      213: 9207647937845254068
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_3
+  - first:
+      213: -5374254055731874955
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_4
+  - first:
+      213: 5763646179796200441
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_5
+  - first:
+      213: 1548899354163698487
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_6
+  - first:
+      213: -6599690963064821118
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_7
+  - first:
+      213: 7096839259750686364
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_8
+  - first:
+      213: -4331222633708737782
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_9
+  - first:
+      213: -645400569106753754
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_10
+  - first:
+      213: -392196950465497236
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_11
+  - first:
+      213: -2342960266565537885
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_12
+  - first:
+      213: -7118475591787859773
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_13
+  - first:
+      213: 941142568235552407
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_14
+  - first:
+      213: -675297622254100017
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_15
+  - first:
+      213: 3312679479051812857
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_16
+  - first:
+      213: -2164752122170573566
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_17
+  - first:
+      213: 3694084036627937602
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_18
+  - first:
+      213: 1393323065215579709
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_19
+  - first:
+      213: -1051938423486789072
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_20
+  - first:
+      213: -3487717240891990507
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_21
+  - first:
+      213: 9080814886321749852
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_22
+  - first:
+      213: 8024095727754637438
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_23
+  - first:
+      213: 8279944425344905990
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_24
+  - first:
+      213: 656625702219338401
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_25
+  - first:
+      213: 8311722837710640927
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_26
+  - first:
+      213: 6853822987051114985
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_27
+  - first:
+      213: -3828683644024719890
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_28
+  - first:
+      213: 6837379918931975848
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_29
+  - first:
+      213: 3285104637187215910
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_30
+  - first:
+      213: 860523765922198408
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_31
+  - first:
+      213: -8898157857497363120
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_32
+  - first:
+      213: 3313990324967114329
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_33
+  - first:
+      213: 1382370587459533804
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_34
+  - first:
+      213: -7406259756589160090
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_35
+  - first:
+      213: 7177236539260606817
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_36
+  - first:
+      213: -2991526663642312881
+    second: ChatGPT Image Apr 21, 2025, 11_54_06 PM_37
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChatGPT Image Apr 21, 2025, 11_54_06 PM_5
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 822
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb2ac5d9a59cff40800000000000000
+      internalID: 5763646179796200441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_0
+      rect:
+        serializedVersion: 2
+        x: 620
+        y: 822
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9755b3a3cbacba5458936bee76b7b986
+      internalID: -1464961241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_1
+      rect:
+        serializedVersion: 2
+        x: 441
+        y: 823
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84ecd03e6d19a7241bf137567807d50b
+      internalID: 2080036332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_2
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 822
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a133a8c51c6ac8645be59d8c0e07a5a4
+      internalID: -1589177158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_3
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 822
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c39ad6aba59283e4fbe2d5eec862252d
+      internalID: 2118809697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_4
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 630
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36b22defae8c96a4f99ef272ed00a3a9
+      internalID: -430659520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_5
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 632
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ed110fc6489de4696b0e65583f2a33
+      internalID: -1577263301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_6
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 631
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6845fc142da8494b924dbcb24637edc
+      internalID: -632567341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_7
+      rect:
+        serializedVersion: 2
+        x: 618
+        y: 632
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9a8acac9c1c0248b897a0264cde5d0
+      internalID: 1594594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_8
+      rect:
+        serializedVersion: 2
+        x: 808
+        y: 632
+        width: 87
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455c8b52a513db746a9d9fc76c2b9dea
+      internalID: -1696977818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0112c874529134a49860434eafcca44b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":5.0,"y":5.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_0: -4447813132229823349
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_1: 3839732646502739657
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_10: -645400569106753754
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_11: -392196950465497236
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_12: -2342960266565537885
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_13: -7118475591787859773
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_14: 941142568235552407
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_15: -675297622254100017
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_16: 3312679479051812857
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_17: -2164752122170573566
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_18: 3694084036627937602
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_19: 1393323065215579709
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_2: 6125505258414885182
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_20: -1051938423486789072
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_21: -3487717240891990507
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_22: 9080814886321749852
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_23: 8024095727754637438
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_24: 8279944425344905990
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_25: 656625702219338401
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_26: 8311722837710640927
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_27: 6853822987051114985
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_28: -3828683644024719890
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_29: 6837379918931975848
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_3: 9207647937845254068
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_30: 3285104637187215910
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_31: 860523765922198408
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_32: -8898157857497363120
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_33: 3313990324967114329
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_34: 1382370587459533804
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_35: -7406259756589160090
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_36: 7177236539260606817
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_37: -2991526663642312881
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_4: -5374254055731874955
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_5: 5763646179796200441
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_6: 1548899354163698487
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_7: -6599690963064821118
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_8: 7096839259750686364
+      ChatGPT Image Apr 21, 2025, 11_54_06 PM_9: -4331222633708737782
+      magic_0: -1464961241
+      magic_1: 2080036332
+      magic_2: -1589177158
+      magic_3: 2118809697
+      magic_4: -430659520
+      magic_5: -1577263301
+      magic_6: -632567341
+      magic_7: 1594594
+      magic_8: -1696977818
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
