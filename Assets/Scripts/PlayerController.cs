@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float moveSpeed = 7f;
     [SerializeField] private float jumpForce = 14f;
-    
+
     private float dirX = 0f;
     private float multipleSpeed = 1f;
     private bool isDead = false;
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         }
 
         // Cheat mode cho phép nhảy liên tục
-        if (CheatMode && Input.GetButtonDown(jumpButton)) 
+        if (CheatMode && Input.GetButtonDown(jumpButton))
         {
             Jump();
         }
@@ -133,4 +133,8 @@ public class PlayerController : MonoBehaviour
     }
 
     public void SetSpeedMultiplier(float multiplier) => multipleSpeed = multiplier;
+    public string GetPlayerNum()
+    {
+        return playerNum;
+    }
 }

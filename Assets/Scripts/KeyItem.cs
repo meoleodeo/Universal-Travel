@@ -2,26 +2,30 @@ using UnityEngine;
 
 public class KeyItem : MonoBehaviour
 {
-    // Biến static để lưu trữ số lượng key thu thập được cho cả 2 player
     public static int KeysCollected = 0; 
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
         {
-            KeysCollected++; // Tăng số lượng key
-            Debug.Log("Số key hiện tại: " + KeysCollected);
-            
-            // Có thể thêm hiệu ứng âm thanh hoặc hạt (Particle) ở đây
-            // AudioManager.instance.PlaySFX(AudioManager.instance.coin);
+            PlayerController player = collision.GetComponent<PlayerController>();
 
-            Destroy(gameObject); // Xóa key sau khi nhặt
+            if (player != null && player.GetPlayerNum() == "1")
+            {
+                KeysCollected++;
+                
+                // Hiệu ứng âm thanh/hạt nếu cần
+                Destroy(gameObject); 
+            }
+            else
+            {
+                if (NotificationManager.instance != null)
+                {
+                    NotificationManager.instance.ShowNotification("Chỉ Player1 (P1) mới có thể nhặt chìa khóa!");
+                }
+            }
         }
     }
 
-    // Hàm để reset lại số key khi bắt đầu level mới
-    public static void ResetKeys()
-    {
-        KeysCollected = 0;
-    }
+    public static void ResetKeys() => KeysCollected = 0;
 }
