@@ -75,6 +75,11 @@ public class HealthSystem : MonoBehaviour
     {
         if (isPlayer && AudioManager.instance != null) AudioManager.instance.StopMusic();
         OnDeath?.Invoke();
+
+        if (!isPlayer) 
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void UpdateHealthUI()
