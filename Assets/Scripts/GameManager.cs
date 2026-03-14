@@ -20,6 +20,7 @@ public class GameManager : MonoBehaviour
     {
         PlayerData.ResetData();
         AudioManager.instance.PlayMusic(AudioManager.instance.backgroundMusic);
+        Debug.Log("Current Level: " + currentLevel);
         string sceneName = "Level" + currentLevel;
 
         if (Application.CanStreamedLevelBeLoaded(sceneName))
