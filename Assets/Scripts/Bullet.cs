@@ -33,6 +33,13 @@ public class Bullet : MonoBehaviour
                 wolf.TakeDamage(damage);
             }
 
+            // --- THÊM ĐOẠN NÀY ĐỂ ĐÁNH BOSS ---
+            BringerOfDeathAI boss = hitInfo.GetComponent<BringerOfDeathAI>();
+            if (boss != null)
+            {
+                boss.TakeDamage(damage);
+            }
+
             // Tạo hiệu ứng nổ nếu có
             if (impactEffect != null) Instantiate(impactEffect, transform.position, transform.rotation);
 

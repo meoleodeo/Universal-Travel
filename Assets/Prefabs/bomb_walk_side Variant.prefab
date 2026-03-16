@@ -8,17 +8,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5878814509205523413, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878814509312524739, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878814509778905552, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878814509778905552, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878814509778905554, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5878814510507608232, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
       propertyPath: m_Name
       value: bomb_walk_side Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5878814510507608234, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
+      propertyPath: m_FlipX
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5878814510507608235, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 24.669706
+      value: 17.025553
       objectReference: {fileID: 0}
     - target: {fileID: 5878814510507608235, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.3426163
+      value: -11.011326
       objectReference: {fileID: 0}
     - target: {fileID: 5878814510507608235, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
       propertyPath: m_LocalPosition.z

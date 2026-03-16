@@ -3,9 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody2D))] // Dòng này tự động thêm Rigidbody2D nếu bạn quên
 public class SuicidalEnemy : MonoBehaviour
 {
-    public GameObject explosionPrefab; 
+    public GameObject explosionPrefab;
     public float moveSpeed = 2f;
-    public float patrolRange = 3f; 
+    public float patrolRange = 3f;
     public float explodeDistance = 1.2f;
 
     private Transform player;
@@ -17,8 +17,8 @@ public class SuicidalEnemy : MonoBehaviour
     {
         GameObject p = GameObject.FindGameObjectWithTag("Player");
         if (p != null) player = p.transform;
-        
-        startPosition = transform.position; 
+
+        startPosition = transform.position;
         rb = GetComponent<Rigidbody2D>(); // Lấy component vật lý
     }
 
@@ -33,7 +33,7 @@ public class SuicidalEnemy : MonoBehaviour
     {
         if (isAttacking && player != null)
         {
-            if (Vector2.Distance(transform.position, player.position) < explodeDistance) 
+            if (Vector2.Distance(transform.position, player.position) < explodeDistance)
             {
                 Explode();
             }
@@ -43,9 +43,12 @@ public class SuicidalEnemy : MonoBehaviour
     // Hàm này tự động kích hoạt khi Collider của Enemy đập trúng Collider khác
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        // Nếu kẻ bị đụng trúng có Tag là "Player"
         if (collision.gameObject.CompareTag("Player"))
         {
+            // Nếu đụng trực tiếp, gây sát thương luôn rồi nổ
+            HealthSystem h = collision.gameObject.GetComponent<HealthSystem>();
+            if (h != null) h.TakeDamage(1);
+
             Explode();
         }
     }
@@ -58,7 +61,7 @@ public class SuicidalEnemy : MonoBehaviour
         {
             // Chỉ di chuyển ngang (trục X) theo hướng của Player
             float direction = player.position.x > transform.position.x ? 1f : -1f;
-            
+
             // rb.velocity.y giữ nguyên lực rơi của trọng lực
             rb.velocity = new Vector2(direction * moveSpeed, rb.velocity.y);
         }
@@ -67,7 +70,7 @@ public class SuicidalEnemy : MonoBehaviour
             // Đi tuần tra (Patrol) qua lại quanh điểm gốc
             float targetX = startPosition.x + Mathf.PingPong(Time.time * moveSpeed, patrolRange) - (patrolRange / 2);
             float direction = targetX > transform.position.x ? 1f : -1f;
-            
+
             // Kiểm tra nếu chưa tới đích thì đi tiếp, tới nơi thì đứng lại
             if (Mathf.Abs(targetX - transform.position.x) > 0.1f)
             {

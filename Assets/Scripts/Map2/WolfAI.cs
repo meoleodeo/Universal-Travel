@@ -5,19 +5,21 @@ using System.Collections;
 public class WolfAI : MonoBehaviour
 {
     [Header("Target & Ranges")]
-    public Transform targetPlayer; 
-    [SerializeField] private float chaseRange = 6f;   
-    [SerializeField] private float attackRange = 3.5f; // Đã tăng sẵn lên mức an toàn
-    
+    public Transform targetPlayer;
+    [SerializeField] private float chaseRange = 10f;
+    [SerializeField] private float attackRange = 3f;
+
     [Header("Stats")]
     [SerializeField] private float runSpeed = 4f;
-    [SerializeField] private float attackCooldown = 1.5f; 
-    [SerializeField] private int maxHealth = 3;
+    [SerializeField] private float attackCooldown = 1f;
+    [SerializeField] private int maxHealth = 15;
 
+    [Header("Explosion Effect")]
+    [SerializeField] private GameObject bombExplosionPrefab;
     private Animator anim;
     private Rigidbody2D rb;
     private int currentHealth;
-    
+
     private bool isDead = false;
     private bool isAttacking = false;
     private bool isTakingDamage = false;
@@ -28,7 +30,7 @@ public class WolfAI : MonoBehaviour
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
-        rb.freezeRotation = true; 
+        rb.freezeRotation = true;
     }
 
     void Update()
@@ -62,9 +64,9 @@ public class WolfAI : MonoBehaviour
             {
                 AttackPlayer();
             }
-            else 
+            else
             {
-                anim.Play("DarkWolf_2d_Idle Animation"); 
+                anim.Play("DarkWolf_2d_Idle Animation");
                 rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
             }
         }
@@ -74,7 +76,7 @@ public class WolfAI : MonoBehaviour
         }
         else
         {
-            anim.Play("DarkWolf_2d_Idle Animation"); 
+            anim.Play("DarkWolf_2d_Idle Animation");
             rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
         }
     }
@@ -100,7 +102,7 @@ public class WolfAI : MonoBehaviour
                 closestTarget = p.transform;
             }
         }
-        
+
         targetPlayer = closestTarget;
     }
 
@@ -116,9 +118,8 @@ public class WolfAI : MonoBehaviour
     {
         isAttacking = true;
         lastAttackTime = Time.time;
-        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y); 
-        
-        // CỨU CÁNH Ở ĐÂY: Thêm ", -1, 0f" để ép Unity CHẮC CHẮN phải chạy lại animation từ đầu
+        rb.linearVelocity = new Vector2(0, rb.linearVelocity.y);
+
         anim.Play("DarkWolf_2d_Attack Animation", -1, 0f);
 
         StartCoroutine(ExecuteAttack());
@@ -126,18 +127,18 @@ public class WolfAI : MonoBehaviour
 
     private IEnumerator ExecuteAttack()
     {
-        // 1. Đợi một chút xíu (0.2 giây) cho khớp với lúc móng vuốt vung xuống chạm người
-        yield return new WaitForSeconds(0.2f); 
+        // Đợi tới đúng frame ra đòn
+        yield return new WaitForSeconds(0.2f);
 
-        // 2. Gây sát thương: Nếu Player vẫn còn nằm trong tầm cào (cộng thêm 0.5f phòng hờ Player nhích nhẹ)
+        SpawnExplosionEffect();
+
         if (targetPlayer != null && Vector2.Distance(transform.position, targetPlayer.position) <= attackRange + 0.5f)
         {
             HealthSystem playerHealth = targetPlayer.GetComponent<HealthSystem>();
             if (playerHealth != null)
             {
-                playerHealth.TakeDamage(1); // Trừ máu theo script HealthSystem của bạn
-                
-                // Hất văng Player ra sau để tránh bị kẹt góc vĩnh viễn
+                playerHealth.TakeDamage(1);
+
                 PlayerController pController = targetPlayer.GetComponent<PlayerController>();
                 if (pController != null)
                 {
@@ -147,9 +148,16 @@ public class WolfAI : MonoBehaviour
             }
         }
 
-        // 3. Đợi nốt phần thời gian còn lại của animation (tổng là 0.5s)
-        yield return new WaitForSeconds(0.3f); 
+        yield return new WaitForSeconds(0.3f);
         isAttacking = false;
+    }
+
+    private void SpawnExplosionEffect()
+    {
+        if (bombExplosionPrefab == null) return;
+
+        Vector3 spawnPos = targetPlayer != null ? targetPlayer.position : transform.position;
+        GameObject explosion = Instantiate(bombExplosionPrefab, spawnPos, Quaternion.identity);
     }
 
     public void TakeDamage(int damage)
@@ -172,26 +180,20 @@ public class WolfAI : MonoBehaviour
 
     private IEnumerator ResetDamageState()
     {
-        yield return new WaitForSeconds(0.4f); 
+        yield return new WaitForSeconds(0.4f);
         isTakingDamage = false;
     }
 
-private void Die()
+    private void Die()
     {
         isDead = true;
         anim.Play("DarkWolf_2d_Death Animation", -1, 0f);
-        
-        // 1. Dừng mọi di chuyển
+
         rb.linearVelocity = Vector2.zero;
-        
-        // 2. Tắt trọng lực để xác không bị rơi xuyên qua mặt đất
-        rb.gravityScale = 0f; 
-        
-        // 3. Tắt khung va chạm để Player đi xuyên qua xác chết
-        GetComponent<Collider2D>().enabled = false; 
-        
-        // 4. Hủy object sau 2 giây (đủ để xem hết animation chết)
-        Destroy(gameObject, 2f); 
+        rb.gravityScale = 0f;
+        GetComponent<Collider2D>().enabled = false;
+
+        Destroy(gameObject, 2f);
     }
 
     private void FlipTowards(float targetPositionX)

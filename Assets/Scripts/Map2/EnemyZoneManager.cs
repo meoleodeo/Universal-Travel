@@ -6,17 +6,20 @@ public class EnemyZoneManager : MonoBehaviour
     public GameObject enemyPrefab;    
     public Transform spawnPoint;      
     public float spawnInterval = 2f;  
-    
+    public int maxSpawnLimit = 10; // GIỚI HẠN 10 CON
+
     private List<SuicidalEnemy> activeEnemies = new List<SuicidalEnemy>();
     private bool isPlayerInside = false;
     private float timer;
+    private int totalSpawnedCount = 0; // Biến đếm số lượng đã sinh
 
     void Update()
     {
         // Dọn dẹp những Enemy đã nổ khỏi danh sách
         activeEnemies.RemoveAll(enemy => enemy == null);
 
-        if (isPlayerInside)
+        // Chỉ sinh thêm nếu Player ở trong vùng VÀ chưa đủ 10 con
+        if (isPlayerInside && totalSpawnedCount < maxSpawnLimit)
         {
             timer += Time.deltaTime;
             if (timer >= spawnInterval)
@@ -38,6 +41,8 @@ public class EnemyZoneManager : MonoBehaviour
         {
             activeEnemies.Add(enemyScript);
             enemyScript.SetAttackMode(true);
+            totalSpawnedCount++; // Tăng biến đếm sau khi sinh thành công
+            Debug.Log($"Đã sinh: {totalSpawnedCount}/{maxSpawnLimit}");
         }
     }
 
