@@ -1178,7 +1178,7 @@ Camera:
   far clip plane: 1000
   field of view: 34
   orthographic: 1
-  orthographic size: 6.447656
+  orthographic size: 4.3125
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -8536,32 +8536,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7374955062049314340, guid: 9d9beaad51e9c4945bf4b0ccbd8f4916, type: 3}
   m_PrefabInstance: {fileID: 1111526581}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1166508010 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2555975905631282078, guid: 0a05d9801c590e04aa9fb7c0c7196103, type: 3}
-  m_PrefabInstance: {fileID: 1987649730}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1166508011 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8670549150684177563, guid: 0a05d9801c590e04aa9fb7c0c7196103, type: 3}
   m_PrefabInstance: {fileID: 1987649730}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1166508013
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1166508010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fcb926a501c0a441ad6270b4549ee5d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: '::'
-  bounceForce: 50
-  playerTag: Player
-  anim: {fileID: 0}
-  jumpAnimationName: JumpOneTime
 --- !u!1 &1177800162
 GameObject:
   m_ObjectHideFlags: 0
@@ -14366,14 +14345,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1307437747}
     m_Modifications:
-    - target: {fileID: 65957017672955852, guid: 0a05d9801c590e04aa9fb7c0c7196103, type: 3}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 65957017672955852, guid: 0a05d9801c590e04aa9fb7c0c7196103, type: 3}
-      propertyPath: jumpAnimationName
-      value: JumpOneTime
-      objectReference: {fileID: 0}
     - target: {fileID: 2555975905631282078, guid: 0a05d9801c590e04aa9fb7c0c7196103, type: 3}
       propertyPath: m_Name
       value: JumpOneTime
@@ -14421,10 +14392,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2555975905631282078, guid: 0a05d9801c590e04aa9fb7c0c7196103, type: 3}
-      insertIndex: 3
-      addedObject: {fileID: 1166508013}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0a05d9801c590e04aa9fb7c0c7196103, type: 3}
 --- !u!1 &2021783890
 GameObject:
