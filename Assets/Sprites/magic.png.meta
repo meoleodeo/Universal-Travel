@@ -220,6 +220,19 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -293,8 +306,8 @@ TextureImporter:
       name: magic_2
       rect:
         serializedVersion: 2
-        x: 269
-        y: 822
+        x: 275
+        y: 820
         width: 87
         height: 163
       alignment: 0
@@ -315,8 +328,8 @@ TextureImporter:
       name: magic_3
       rect:
         serializedVersion: 2
-        x: 96
-        y: 822
+        x: 98
+        y: 807
         width: 87
         height: 163
       alignment: 0
@@ -385,8 +398,8 @@ TextureImporter:
         y: 631
         width: 87
         height: 163
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5253938, y: 0.4999996}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -439,6 +452,28 @@ TextureImporter:
       bones: []
       spriteID: 455c8b52a513db746a9d9fc76c2b9dea
       internalID: -1696977818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: magic_9
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 809
+        width: 933
+        height: 175
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6210f04c29a2c9e4b942c518e1abeb66
+      internalID: -2014253963
       vertices: []
       indices: 
       edges: []
@@ -506,6 +541,7 @@ TextureImporter:
       magic_6: -632567341
       magic_7: 1594594
       magic_8: -1696977818
+      magic_9: -2014253963
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
