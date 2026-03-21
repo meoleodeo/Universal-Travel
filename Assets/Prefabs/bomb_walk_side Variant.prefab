@@ -32,6 +32,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: bomb_walk_side Variant
       objectReference: {fileID: 0}
+    - target: {fileID: 5878814510507608232, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 5878814510507608234, guid: 48fa1b934b6f4811be9d7391029ebe2c, type: 3}
       propertyPath: m_FlipX
       value: 1

@@ -40,6 +40,12 @@ public class Bullet : MonoBehaviour
                 boss.TakeDamage(damage);
             }
 
+            SuicidalEnemy suicidal = hitInfo.GetComponent<SuicidalEnemy>();
+            if (suicidal != null)
+            {
+                suicidal.TakeDamage(damage);
+            }
+
             // Tạo hiệu ứng nổ nếu có
             if (impactEffect != null) Instantiate(impactEffect, transform.position, transform.rotation);
 

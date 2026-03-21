@@ -83,6 +83,12 @@ public class SuicidalEnemy : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damage)
+    {
+        // Vì lính cảm tử có 1 HP, nên hễ nhận sát thương là nổ ngay
+        Explode();
+    }
+
     void Explode()
     {
         if (explosionPrefab != null)
