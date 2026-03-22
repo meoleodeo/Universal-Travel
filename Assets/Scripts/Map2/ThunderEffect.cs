@@ -3,44 +3,38 @@ using UnityEngine;
 public class ThunderEffect : MonoBehaviour
 {
     private Collider2D strikeCollider;
-    public int damageAmount = 1; // Số máu sẽ trừ
+    public int damageAmount = 1;
+    private bool hasDealtDamage = false; // Biến kiểm soát chỉ gây sát thương 1 lần
 
     void Awake() {
         strikeCollider = GetComponent<Collider2D>();
         if (strikeCollider != null) {
-            strikeCollider.enabled = false; // Lúc đầu tắt để tránh gây sát thương nhầm
+            strikeCollider.enabled = false; 
         }
+        // Tự hủy tia sét sau khi diễn xong animation (ví dụ 1.5s)
+        Destroy(gameObject, 1.5f);
     }
 
-    // --- PHẦN BỊ THIẾU: Xử lý va chạm ---
     private void OnTriggerEnter2D(Collider2D other)
     {
-        // Kiểm tra nếu Collider đang bật và chạm đúng Player
-        if (strikeCollider.enabled && other.CompareTag("Player"))
+        // Chỉ gây sát thương nếu chưa gây lần nào trong vòng đời của tia sét này
+        if (!hasDealtDamage && strikeCollider.enabled && other.CompareTag("Player"))
         {
-            // Dùng GetComponentInParent để an toàn nhất (như đã thảo luận)
             HealthSystem health = other.GetComponentInParent<HealthSystem>();
-            
             if (health != null)
             {
                 health.TakeDamage(damageAmount);
-                Debug.Log("Sét đã trừ máu của: " + other.name);
+                hasDealtDamage = true; // Khóa sát thương lại
+                Debug.Log("Sét đánh trúng!");
             }
         }
     }
 
-    // Hàm này gọi từ Animation Event (Frame sét đánh mạnh nhất)
     public void ApplyDamage() {
-        if (strikeCollider != null) {
-            strikeCollider.enabled = true; 
-            Debug.Log("Sét đánh trúng - Đang kích hoạt vùng sát thương!");
-        }
+        if (strikeCollider != null) strikeCollider.enabled = true; 
     }
 
-    // Hàm này gọi từ Animation Event (Frame sét biến mất)
     public void EndDamage() {
-        if (strikeCollider != null) {
-            strikeCollider.enabled = false;
-        }
+        if (strikeCollider != null) strikeCollider.enabled = false;
     }
 }
