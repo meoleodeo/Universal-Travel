@@ -2,19 +2,27 @@ using UnityEngine;
 
 public class ThunderTrap : MonoBehaviour
 {
-    public GameObject thunderPrefab; // Kéo Prefab hiệu ứng sấm sét vào đây
-    public Transform strikePoint;    // Điểm mà sấm sét sẽ đánh xuống (thường là vị trí của cái bẫy)
-    public float delayTime = 0.5f;   // Thời gian trễ từ lúc báo động đến lúc sét đánh
+    public GameObject thunderPrefab; 
+    public Transform strikePoint;    
+    public float delayTime = 0.5f;   
     
     private bool isTriggered = false;
+    private Collider2D trapCollider; // Thêm biến để tắt Collider ngay lập tức
+
+    void Awake() {
+        trapCollider = GetComponent<Collider2D>();
+    }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (!isTriggered && other.CompareTag("Player"))
         {
             isTriggered = true;
-            Invoke("SpawnThunder", delayTime); // Tạo khoảng trễ để người chơi kịp né
-            // Bạn có thể thêm hiệu ứng cảnh báo (vòng tròn đỏ dưới đất) ở đây
+            
+            // QUAN TRỌNG: Tắt collider của bẫy ngay để không nhận thêm va chạm nào nữa
+            if(trapCollider != null) trapCollider.enabled = false;
+
+            Invoke("SpawnThunder", delayTime);
         }
     }
 
@@ -22,10 +30,11 @@ public class ThunderTrap : MonoBehaviour
     {
         if (thunderPrefab != null)
         {
+            // Tạo ra tia sét
             Instantiate(thunderPrefab, strikePoint.position, Quaternion.identity);
         }
         
-        // Nếu bẫy này chỉ dùng 1 lần thì Destroy, nếu dùng nhiều lần thì reset isTriggered sau vài giây
-        Destroy(gameObject, 1f); 
+        // Xóa cái bẫy đi sau khi đã gọi sét
+        Destroy(gameObject, 0.1f); 
     }
 }
